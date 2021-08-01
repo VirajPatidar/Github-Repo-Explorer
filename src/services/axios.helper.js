@@ -18,6 +18,10 @@ async function axiosGetCancellable(url, config) {
         const res = await axios.get(url, cancelConfig);
         return res;
     } catch (error) {
+        if (error.response !== undefined && error.response.status === 401) {
+            alert("You have exceeded the API limit. Please try after some time (> 1 minute)");
+            window.location.reload();
+        }
         if (error.message !== 'cancelled') {
             throw error;
         }

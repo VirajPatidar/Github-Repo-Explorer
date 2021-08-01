@@ -11,10 +11,14 @@ const axiosConfig = {
 export default async (req, res) => {
     const { q, sort, order } = req.query;
 
-    const response = await axios.get(
-        `search/repositories?q=${q}&sort=${sort}&order=${order}`,
-        axiosConfig
-    );
-
-    res.json(response.data);
+    try {
+        const response = await axios.get(
+            `search/repositories?q=${q}&sort=${sort}&order=${order}`,
+            axiosConfig
+        );
+        res.json(response.data);
+    } 
+    catch (err) {
+        res.status(401).json({ message: "API limit exceeded" })
+    }
 };
