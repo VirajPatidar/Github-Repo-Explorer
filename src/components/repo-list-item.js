@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './repo-list-item.module.scss';
+import { FaStar, FaCodeBranch, FaCode } from 'react-icons/fa';
 
 const RepoListItem = ({ repo }) => {
     const cutDescription = (description) => {
@@ -19,19 +20,21 @@ const RepoListItem = ({ repo }) => {
                 </Link>
             </div>
 
-            <p className={styles.className}>{cutDescription(repo.description)}</p>
+            <p className={styles.description}>{cutDescription(repo.description)}</p>
 
             <div className={styles.footer}>
                 <div className={styles.counters}>
                     <div className={styles.counter}>
+                        <FaStar />
                         <span>{repo.stargazers_count}</span>
                     </div>
                     <div className={styles.counter}>
+                        <FaCodeBranch />
                         <span>{repo.forks_count}</span>
                     </div>
                 </div>
                 <div className={styles.language}>
-                    <spa>{repo.language}</spa>
+                    <span>{repo.language}</span>
                 </div>
             </div>
         </div>

@@ -25,6 +25,7 @@ const Search = (props) => {
                 className={styles.searchInput}
                 label="Repo Search"
                 value={searchText}
+                placeholder="name or description"
                 onChange={(value) => onSearchTextChange(value)}
             />
             <Select
