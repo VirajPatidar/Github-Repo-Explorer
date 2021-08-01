@@ -5,7 +5,6 @@ import Search from '../src/components/search';
 import { searchRepos } from '../src/services/githubService';
 import RepoList from '../src/components/repo-list';
 import styles from './index.module.scss'; 
-import Image from 'next/image'
 
 const Index = (props) => {
     const [searchText, setSearchText] = useState('');
@@ -36,7 +35,7 @@ const Index = (props) => {
 
     return (
         <div className={styles.container}>
-            <Image className={styles.logo} src="/img/developer.svg" alt="image"/>
+            <img className={styles.logo} src="/img/developer.svg" alt="image"/>
             <Search
                 searchText={searchText}
                 language={language}

@@ -7,7 +7,7 @@ const UserAvatar = ({ user }) => {
     return (
         <div className={styles.user}>
             <figure className={`${styles.avatar} image`}>
-                <Image className="is-rounded" src={user.avatar_url} alt="avatar" />
+                <img className="is-rounded" src={user.avatar_url} alt="avatar" />
             </figure>
             <div className={styles.userLink}>
                 <Link href="/profile/[id]" as={`/profile/${user.login}`}>
