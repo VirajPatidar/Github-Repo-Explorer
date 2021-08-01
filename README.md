@@ -5,7 +5,7 @@ _The project lists out the repositories based on the name/description and langua
 _You can also view the the repository and profile details by clicking on their respective links.
 There is a limit on the number of requests a user can make, which usually gets refreshed after a few minutes._
 
-**Link to the website:** [https://github-repo-explorer.vercel.app/](https://github-repo-explorer.vercel.app/)
+**Link to the website:** [https://github-repo-explorer-three.vercel.app/](https://github-repo-explorer-three.vercel.app/)
 
 **Tech Stack**
 * Next.js
