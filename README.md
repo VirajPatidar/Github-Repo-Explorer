@@ -1,3 +1,17 @@
+# Github Repo Explorer: A project that uses the Github API to view popular repositories
+
+_The project lists out the repositories based on the name/description and language selected by the user and displays the result sorted according the number of stars it has received._
+
+_You can also view the the repository and profile details by clicking on their respective links.
+There is a limit on the number of requests a user can make, which usually gets refreshed after a few minutes._
+
+**Link to the website:** [https://github-repo-explorer.vercel.app/](https://github-repo-explorer.vercel.app/)
+
+**Tech Stack**
+* Next.js
+* Bulma CSS
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
