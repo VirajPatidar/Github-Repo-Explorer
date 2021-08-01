@@ -3,6 +3,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import Search from '../src/components/search';
 import { searchRepos } from '../src/services/githubService';
+import RepoList from '../src/components/repo-list';
 
 const Index = (props) => {
     const [searchText, setSearchText] = useState('');
@@ -39,7 +40,7 @@ const Index = (props) => {
                 onSearchTextChange={onSearchTextChange}
                 onLanguageChange={onLanguageChange}
             />
-            {loading ? 'Loading...' : <div>{JSON.stringify(repos, null, 2)}</div>}
+            <RepoList loading={loading} repos={repos} />
         </div>
     );
 };
