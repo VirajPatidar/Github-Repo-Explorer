@@ -2,19 +2,23 @@ import React from 'react';
 import Link from 'next/link';
 
 const Navbar = () => {
+    
+    const [isActive, setisActive] = React.useState(false);
+
     return (
         <nav
-            class="navbar is-primary"
+            className="navbar is-primary"
             role="navigation"
             aria-label="main navigation"
         >
-            <div class="navbar-brand">
+            <div className="navbar-brand">
                 <Link href="/">
-                    <a class="navbar-item">Github Repo Explorer</a>
+                    <a className="navbar-item">Github Repo Explorer</a>
                 </Link>
                 <a
+                    onClick={() => {setisActive(!isActive)}}
                     role="button"
-                    class="navbar-burger burger"
+                    className="navbar-burger burger"
                     aria-label="menu"
                     aria-expanded="false"
                     data-target="navbarBasicExample"
@@ -25,13 +29,13 @@ const Navbar = () => {
                 </a>
             </div>
 
-            <div class="navbar-menu">
-                <div class="navbar-start">
+            <div id="navbarBasicExample" className={`navbar-menu ${isActive ? "is-active" : ""}`}>
+                <div className="navbar-start">
                     <Link href="/">
-                        <a class="navbar-item">Home</a>
+                        <a className="navbar-item">Home</a>
                     </Link>
                     <Link href="/about">
-                        <a class="navbar-item">About</a>
+                        <a className="navbar-item">About</a>
                     </Link>
                 </div>
             </div>

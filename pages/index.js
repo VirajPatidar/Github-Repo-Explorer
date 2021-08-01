@@ -14,7 +14,7 @@ const Index = (props) => {
 
     const onSearchTextChange = (text) => {
         setSearchText(text);
-        if (text) {
+        if (text.trim()) {
             loadRepos(text, language);
         }
     };
