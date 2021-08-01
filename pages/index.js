@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Search from '../src/components/search';
 import { searchRepos } from '../src/services/githubService';
 import RepoList from '../src/components/repo-list';
+// import styles from './index.module.scss'; 
 
 const Index = (props) => {
     const [searchText, setSearchText] = useState('');
