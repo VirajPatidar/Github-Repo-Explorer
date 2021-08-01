@@ -12,7 +12,7 @@ const About = () => {
                 <div className="is-primary">
                     <div className="is-align-self-center level level-left has-text-black">
                         <span className="is-size-5 mr-2">Project Code can be found at: </span>
-                        <a href="https://github.com/VirajPatidar" target="_blank">
+                        <a href="https://github.com/VirajPatidar" target="_blank" rel="noreferrer">
                             <button className="button has-background-grey-lighter"><FaGithub size={25} className="mr-2 has-text-black" />Viraj Patidar</button>
                         </a>
                     </div>
