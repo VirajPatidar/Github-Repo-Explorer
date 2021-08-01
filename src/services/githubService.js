@@ -22,8 +22,16 @@ function searchRepos(searchText, language) {
     return axiosGetCancellable(`api/search?q=${query}&sort=stars&order=desc`);
 }
 
+function getRepo(id) {
+    return axios.get(`repositories/${id}`, axiosConfig);
+  }
+  
+  function getProfile(username) {
+    return axios.get(`users/${username}`, axiosConfig);
+  }
+
 function isServer() {
     return typeof window === 'undefined';
 }
 
-export { searchRepos };
+export { searchRepos, getRepo, getProfile };
