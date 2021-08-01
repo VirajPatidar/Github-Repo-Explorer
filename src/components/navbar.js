@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { FaGithub } from 'react-icons/fa';
 
 const Navbar = () => {
     
@@ -13,7 +14,7 @@ const Navbar = () => {
         >
             <div className="navbar-brand">
                 <Link href="/">
-                    <a className="navbar-item">Github Repo Explorer</a>
+                    <a className="navbar-item"><FaGithub size={25} className="mr-2 has-text-black"/>Github Repo Explorer</a>
                 </Link>
                 <a
                     onClick={() => {setisActive(!isActive)}}
