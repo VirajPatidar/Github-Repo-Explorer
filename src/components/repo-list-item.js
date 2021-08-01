@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './repo-list-item.module.scss';
 import { FaStar, FaCodeBranch, FaCode } from 'react-icons/fa';
+import UserAvatar from './user-avatar';
 
 const RepoListItem = ({ repo }) => {
     const cutDescription = (description) => {
@@ -20,6 +21,7 @@ const RepoListItem = ({ repo }) => {
                 </Link>
             </div>
 
+            <UserAvatar user={repo.owner} />
             <p className={styles.description}>{cutDescription(repo.description)}</p>
 
             <div className={styles.footer}>
