@@ -5,14 +5,29 @@ _The project lists out the repositories based on the name/description and langua
 _You can also view the the repository and profile details by clicking on their respective links.
 There is a limit on the number of requests a user can make, which usually gets refreshed after a few minutes._
 
+<br/>
+
 **Link to the website:** [https://github-repo-explorer-three.vercel.app/](https://github-repo-explorer-three.vercel.app/)
+
+<br/>
 
 **Tech Stack**
 * Next.js
+* Github API
 * Bulma CSS
 
+<br/>
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**Features**
+* Lists out the repositories based on the name/description and language selected
+* Server-side Rendering (SSR)
+* Responsive Design
+
+
+<br/>
+<br/>
+
+## This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
